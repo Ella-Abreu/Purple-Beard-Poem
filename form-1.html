@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  
+    <body>
+      <h1 id="title"> <strong>Ella's First Form</strong></h1>
+      <br>
+      <p id="description"><b><em>My first ever survey-style form, coded using HTML and CSS.</em></b></p>
+     
+      <hr>
+     
+      <form id="survey-form">
+        <ul>
+       <li><label id="name-label"><b>Name:</b> </label>
+       <input id="name" type="text" placeholder="Joe Bloggs" required></li>
+        
+          <li><label id="email-label"><b>Email:</b></label>
+          <input id="email" type="email" placeholder="joebloggs@email.com" required></li>
+          
+          <li><label id="Age-label"> <b>Age:</b> </label>
+          <input id="number" type="number" placeholder ="30" min="10" max="120" required></li>
+          
+          <li><label id="number-label"><b>Telephone number:</b> </label>
+          <input id="telephone-number" maxlength="11" type="tel" placeholder="01234123123" required></li>
+          
+          <li><label id="Gender"><b>Gender:</b> </label>
+<select id="dropdown">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Non-binary">Non-binary</option>
+  <option value="Gender-fluid">Gender fluid</option>
+  <option value="Agender">Agender</option>
+  <option value="Other">Other</option>
+</select></li>
+         
+          <li><label id="Rate-this-form"><b>Do you think this form is:</b></label>
+          <br>
+<input id="radio" type="radio" value="amazing" name="rate">Amazing
+<input id="radio" type="radio" value="okay" name="rate">Okay
+<input id="radio" type="radio" value="poor" name="rate">Poor</li>
+    
+          <li><label id="checkbox"> <b>How could this form be improved? (check all that apply):</b></label>
+        <br> 
+          <input id="checkbox" type="checkbox" value="colour-scheme" name="improve">Change the colour scheme
+          <br>
+          <input id="checkbox" type="checkbox" value="font" name="improve">Change the font
+          <br>
+          <input id="checkbox" type="checkbox" value="wording" name="improve">Change the wording of the questions
+          <br>
+          <input id="checkbox" type="checkbox" value="options" name="improve">Include more options
+          <br>
+          <input id="checkbox" type="checkbox" value="comment" name="improve">I have a suggestion (please use the comment box below)</li>
+          <br>
+          <label id="comment-box"><b>Leave your suggestions here:<b></label>
+          <textarea id="comment" placeholder="Your comment here" name="your comment here"></textarea>
+<br>
+<br>
+    
+      <input id="submit" value="submit" type="submit">
+      </form>
+    </body>
+  </html>
